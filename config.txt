@@ -1,0 +1,5 @@
+
+PROJECT_NAME=create-repo-by-template
+create-repo-by-template_VERSION_MAJOR=1
+create-repo-by-template_VERSION_MINOR=0
+create-repo-by-template_VERSION_PATCH=0
