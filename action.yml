@@ -37,7 +37,7 @@ inputs:
 runs:
   using: 'composite'
   steps:
-    - name: replace-repo-topics
+    - name: create-repo-by-template
       shell: bash
       run: |
         curl -L \

@@ -24,7 +24,6 @@ on:
         required: false
         default: ''
 
-
 jobs:
   create_repo_by_template:
     runs-on: ubuntu-latest
