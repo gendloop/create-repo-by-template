@@ -6,7 +6,8 @@ inputs:
     description: 'Personal Token'
     required: true
     default: ${{ github.token }}
-  template_owner: 'Template Owner'
+  template_owner:
+    description: 'Template Owner'
     required: false
     default: 'gendloop'
   template_repo:
