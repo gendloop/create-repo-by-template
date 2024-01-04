@@ -10,7 +10,7 @@ on:
       token:
         description: 'Personal Token'
         required: true
-        default: ${{ github.token }}
+        default: ''
       template_repo:
         description: 'Template Repo Name'
         required: true
