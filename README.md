@@ -1,3 +1,3 @@
 # create-repo-by-template
 
-[Action_Name.yml](Action_Name.yml)
+[Create_Repo_By_Template.yml](.github/workflows/Create_Repo_By_Template.yml)

@@ -1,0 +1,38 @@
+name: Create_Repo_By_Template
+
+permissions:
+  contents: write
+  actions: write
+
+on:
+  workflow_dispatch:
+    inputs:
+      token:
+        description: 'Personal Token'
+        required: true
+        default: ${{ github.token }}
+      template_repo:
+        description: 'Template Repo Name'
+        required: true
+        default: ''
+      repo_name:
+        description: 'Repo Name (e.g. MyRepo)'
+        required: true
+        default: ''
+      repo_description:
+        description: 'Repo Description'
+        required: false
+        default: ''
+
+
+jobs:
+  create_repo_by_template:
+    runs-on: ubuntu-latest
+    steps:
+      - name: create-repo-by-template
+        uses: gendloop/create-repo-by-template@main
+        with:
+          token: ${{ secrets.GENDLOOP_ACCESS_TOKEN }}
+          template_repo: ${{ inputs.template_repo }}
+          repo_name: ${{ inputs.repo_name }}
+          repo_description: ${{ inputs.repo_description }}
